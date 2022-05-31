@@ -26,8 +26,9 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/home', function () {
+        return view('home');
+    })->name('home');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
+
